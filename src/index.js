@@ -17,11 +17,15 @@ class Application {
     this.inputHandler.setupInput();
 
     this.handlerRegistry.addHandler('help', () => `Available commands:
-      help     - Show this help message
-      clear    - Clear the terminal
-      echo     - Echo a message
-      date     - Show current date and time
-      whoami   - Show current user`);
+      help      - Show this help message
+      clear     - Clear the terminal
+      echo      - Echo a message
+      date      - Show current date and time
+      whoami    - Show current user
+      list_notes  - List notes on all servers
+      show_note   - display note
+      open_note   - open note to edit\
+      delete_ntoe - delete note`);
 
     this.handlerRegistry.addHandler('clear', () => this.elementHandler.clear());
   }
